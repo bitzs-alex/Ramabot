@@ -1,0 +1,112 @@
+/*
+    Pricing Style Rules
+    ======================================================================*/
+.pricings
+    padding: $gap-section 0  1.5 * $gap-section
+
+    &__list.grid
+        padding: 0 $gap-horizontal
+
+        .pricings__table
+            margin: 0
+
+.pricing
+    $pricing: &
+    padding: 0 $gap-vertical
+    background-color: $color-white
+    border: 1px solid $color-border
+
+    &__header
+        color: $color-white
+        padding: $gap-vertical
+        min-height: 37rem
+        text-align: center
+        position: relative
+        overflow: hidden
+        margin-top: -$gap-vertical
+        background-color: $color-secondary
+
+        &::after
+            left: 0
+            bottom: -6rem
+            content: ''
+            height: 12rem
+            width: 100%
+            background: $color-white
+            position: absolute
+            transform: skewY(-16deg)
+
+    &__title
+        line-height: 1
+        font-size: 4rem
+        margin-bottom: 1rem
+
+    &__description
+        font-size: 2.4rem
+        font-weight: 300
+
+    &__price
+        width: 17rem
+        height: 17rem
+        z-index: 2
+        text-align: center
+        background: $color-light-gray
+        box-sizing: content-box
+        border-radius: 50%
+        margin: -15rem auto 0
+        position: relative
+        border: 1.6rem solid $color-white
+
+        &-list
+            top: 50%
+            transform: translateY(-50%)
+            position: relative
+
+        &-amount
+            font-size: 3.2rem
+            line-height: 1
+            display: inline-block
+            vertical-align: middle
+            font-family: $font-heading
+
+        &-time
+            vertical-align: middle
+            font-size: 1.6rem
+            display: inline-block
+            text-transform: uppercase
+            text-align: left
+            
+        &-img
+            width: 6.5rem
+            height: 6.5rem
+            display: inline-block
+            @extend .pricing__price-list
+
+        &-separator
+            width: 50%
+            margin: .8rem auto
+
+            hr
+                border: none
+                border-top: 1px solid $color-border
+
+    &__body
+        color: $color-gray
+        margin-top: $gap-vertical
+
+    &__footer
+        margin-top: $gap-vertical
+        text-align: center
+        margin-bottom: -3.5rem
+
+        #{$pricing}__btn
+            color: $color-white
+            background: $color-secondary
+
+    &#{&}--choose
+        #{$pricing}
+            &__header
+                background: $color-primary
+
+            &__footer #{$pricing}__btn
+                background: $color-primary

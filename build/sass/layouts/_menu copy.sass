@@ -1,0 +1,102 @@
+/*
+    Menu Component Style Rules
+    ======================================================================*/
+// .menu
+//     $menu: &
+//     position: absolute
+//     z-index: 90
+//     background-color: $color-primary
+//     width: 0rem
+//     height: 0rem
+//     top: 7.5rem
+//     left: 5.5rem
+//     overflow: hidden
+//     border-radius: 50%
+//     transition: all .4s ease-in-out
+
+//     &#{&}--active
+//         top: -80rem
+//         left: -60rem
+//         width: 120rem
+//         height: 160rem
+
+//         #{$menu}
+//             &__list
+//                 width: 30rem
+
+//             &__link
+//                 width: 100%
+//                 opacity: 1
+//                 background-image: linear-gradient(125deg, transparent 50%, white 50%);
+//                 background-size: 220%;
+
+//     &__list
+//         top: 62%
+//         left: 50%
+//         width: 0rem
+//         position: absolute
+//         transition: all .2s
+
+//     &__item
+//         font-weight: 300
+//         text-transform: uppercase
+
+//     &__link
+//         width: 0%
+//         display: block
+//         font-size: 2.4rem
+//         padding: 2.4rem
+//         padding-left: 5rem
+//         opacity: 0
+//         transition: opacity .08s, width .3s
+
+//         &:hover
+//             background-position: 100% center
+
+//     &__toggler
+//         z-index: 100
+//         width: 15rem
+//         height: 12.2rem
+//         position: relative
+//         margin-right: $gap-title
+//         background-color: $color-primary
+
+        &#{&}--active
+            box-shadow: 0 0 1rem rgba(34, 47, 63, 0.3)
+
+            #{$menu}__hamburger
+                &:nth-child(1)
+                    top: 50%
+                    left: 7.4rem
+                    width: 0.3rem
+                    height: 5rem
+                    transform: translateY(-50%) rotateZ(135deg)
+
+                &:nth-child(2)
+                    width: 5rem
+                    transform: translateY(-50%) rotateZ(135deg)
+
+                &:nth-child(3)
+                    opacity: 0
+                    width: 0
+
+    &__hamburger
+        left: 5rem
+        display: inline-block
+        position: absolute
+        background-color: $color-white
+        height: 0.3rem
+        transform: translateY(-50%)
+        transition: all .4s ease-in-out
+
+        &:first-child
+            width: 5rem
+            top: 35%
+
+        &:nth-child(2)
+            top: 50%
+            width: 3.6rem
+
+        &:nth-child(3)
+            width: 4.3rem
+            top: 65%

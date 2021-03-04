@@ -1,0 +1,14 @@
+{
+  "name": "ramabot-front-end-design",
+  "version": "1.0.0",
+  "description": "The front end design I have build for Ramabot.chat",
+  "main": "index.js",
+  "scripts": {
+    "watch-sass": "node-sass -w --output-style expanded ./build/sass/ -o ./css/",
+    "watch-pug": "pug -w -P ./build/pug/ -o ./",
+    "local-server": "live-server",
+    "build": "run-p local-server watch-sass watch-pug"
+  },
+  "author": "Betizazu Alemu",
+  "license": "ISC"
+}

@@ -1,0 +1,77 @@
+/*
+    Step Component Style Rule
+    ======================================================================*/
+.step
+    &__header
+        font-weight: 100
+        font-size: 1.8rem
+        margin-bottom: $gap-horizontal
+
+    &__body
+        margin-left: $gap-horizontal
+    
+    &:not(:last-child) &__body
+        margin-bottom: $gap-title
+
+    &__text:not(:last-child)
+        margin-bottom: $gap-title
+
+    // &__pic
+    //     &:not(:last-child)
+
+    &__list
+        margin: auto
+        margin-top: 4 * $gap-section
+        @extend .clearfix
+
+    &__item
+        width: 35rem
+        float: left
+        min-height: 48.5rem
+        padding: $gap-title
+        position: relative
+        box-shadow: 0 1rem 1rem 0 rgba($color-black, 0.3);
+        background-color: $color-light-gray
+        @extend .clearfix
+
+        &:not(:first-of-type)
+            margin-left: -$gap-section
+
+    &__number
+        font-size: 12rem
+        opacity: 0.2
+        line-height: 1
+        font-weight: 800
+
+    &__content
+        width: 22rem
+        float: right
+        text-align: right
+        margin-top: -2 * $gap-title
+
+    &__title
+        color: $color-primary
+        font-size: 2.4rem
+
+    &__description
+        margin-bottom: $gap-horizontal
+
+    &__img
+        width: 10rem
+        position: absolute
+        right: $gap-horizontal
+        bottom: $gap-horizontal
+
+    &--one
+        z-index: 4
+
+    &--two
+        z-index: 3
+        margin-top: -$step-margin
+
+    &--three
+        z-index: 2
+        margin-top: -2 * $step-margin
+
+    &--four
+        margin-top: -3 * $step-margin

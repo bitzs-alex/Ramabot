@@ -1,0 +1,75 @@
+/*
+    Footer Style Rules
+    ======================================================================*/
+.footer
+    position: relative
+    padding-top: $gap-section
+    background-color: $color-white
+    background-image: url(../img/footer-back.svg)
+    background-repeat: no-repeat
+    background-size: cover
+
+    &#{&}--no-bgc
+        background-color: transparent
+
+    &__contact
+        margin-top: 1.5 * $gap-vertical
+
+    &__logo.logo
+        text-align: right
+
+        .logo
+            &__img
+                width: 18rem
+                margin: 0 auto $gap-title
+
+            &__link
+                // margin-right: $gap-section
+
+            &__text
+                line-height: 1
+                font-size: 6.2rem
+                color: $color-gray
+        
+    &__content
+        height: 7rem
+        color: $color-white
+        margin-top: 1.5 * $gap-section
+
+        & > *
+            top: 50%
+            position: relative
+            transform: translateY(-50%)
+    
+    &__text
+        font-size: 3.2rem
+        font-weight: 300
+        text-align: right
+
+    &__footer
+        color: $color-gray
+        text-align: center
+        padding: $gap-vertical 0
+        border-top: 1px solid $color-primary
+
+    &__link
+        display: inline-block
+        margin-bottom: 2rem
+        @extend .clearfix
+
+        &-item
+            float: left
+
+            &:not(:last-of-type)
+                &::after
+                    content: '|'
+                    display: inline-block
+                    margin: 0 3rem
+
+        &-link
+            text-transform: capitalize
+            color: currentColor
+
+            &:hover,
+            &:active
+                color: $color-primary

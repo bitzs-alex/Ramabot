@@ -1,0 +1,30 @@
+/*
+    Grid Layout Style Rules
+    ======================================================================*/
+.grid
+    width: 100%
+    @extend .clearfix
+
+    &:not(:last-of-type)
+        margin-bottom: $gap-vertical
+
+    & [class^=col-]
+        float: left
+        
+        &:not(:last-of-type)
+            margin-right: $gap-horizontal
+
+    @for $size from 1 to 2
+        +columnBuilder($size, 2) 
+
+    @for $size from 1 to 3
+        +columnBuilder($size, 3) 
+
+    @for $size from 1 to 4
+        +columnBuilder($size, 4) 
+
+    @for $size from 1 to 5
+        +columnBuilder($size, 5) 
+
+    @for $size from 1 to 6
+        +columnBuilder($size, 6) 

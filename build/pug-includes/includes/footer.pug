@@ -1,0 +1,42 @@
+footer(class=footerClass)
+    .container
+        .grid
+            .col-1-of-2.footer__contact
+                ul.contact
+                    li.contact__item
+                        h3.contact__title call us
+                        i.contact__icon.ri-phone-line
+                        span.contact__detail +254-71489-5580
+
+                    li.contact__item
+                        h3.contact__title email us
+                        i.contact__icon.ri-mail-send-line
+                        a.contact__detail(href="mailto:sales@ramabot.chat") sales@ramabot.chat
+
+            .col-1-of-2
+                .logo.footer__logo
+                    a.logo__link(href="index.html")
+                        img.logo__img.logo__img--block(src="./img/logo-black.png", alt="Ramabot.chat Logo")
+                        span.logo__text ramabot
+
+    .container-fluid
+        .grid.footer__content
+            .col-1-of-2
+                ul.social-links.social-link--lg
+                    li.social-link__item #[a.social-link__link.social-link__link--facebook(href="https://www.facebook.com/") #[i.ri-facebook-line]]
+                    li.social-link__item #[a.social-link__link.social-link__link--instagram(href="https://www.instagram.com/") #[i.ri-instagram-line]]
+                    li.social-link__item #[a.social-link__link.social-link__link--twitter(href="https://www.twitter.com/") #[i.ri-twitter-line]]
+                    li.social-link__item #[a.social-link__link.social-link__link--linkedin(href="https://www.linkedin.com/") #[i.ri-linkedin-line]]
+                    li.social-link__item #[a.social-link__link.social-link__link--youtube(href="https://www.youtube.com/") #[i.ri-youtube-line]]
+
+            .col-1-of-2
+                p.footer__text Fusion Consultants, Kenya
+
+        .footer__footer
+            ul.footer__link
+                li.footer__link-item #[a.footer__link-link(href='terms-of-use.html') terms of use]
+                li.footer__link-item #[a.footer__link-link(href='disclaimer.html') disclaimer]
+                //- li.footer__link-item #[a.footer__link-link(href='faq.html') FAQs]
+
+            .footer__copyright
+                p &copy; 2020 Copyrights Protected. All Rights Reserved.

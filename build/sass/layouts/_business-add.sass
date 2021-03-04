@@ -1,0 +1,40 @@
+/*
+    Business Add Style Rules
+    ======================================================================*/
+.business
+    padding: $gap-section 0
+
+    &-add
+        width: 100%
+        position: relative
+        @extend .clearfix
+        padding: 0 $gap-horizontal
+
+        // &:not(:last-of-type)
+        //     margin-bottom: $gap-vertical
+
+        &__container
+            margin-top: $gap-section
+
+        &__title
+            font-size: 2.4rem
+            color: $color-primary
+
+        &__icon
+            width: 15rem
+            height: 15rem
+            border-radius: 50%
+            margin: 0 auto $gap-vertical
+            background-color: $color-white
+            box-shadow: 0rem 0.5rem 0.5rem 0rem rgba($color-black, 0.1)
+
+        &__img
+            top: 50%
+            left: 50%
+            width: 8rem
+            height: 8rem
+            position: relative
+            transform: translate(-50%, -50%)
+
+        &__body
+            text-align: center

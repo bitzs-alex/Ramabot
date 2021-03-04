@@ -1,0 +1,203 @@
+extends ../pug-includes/layout
+
+block title
+    title Ramabot - Terms of Use Page
+    meta(name="description", content="Ramabot Terms of Uses.")
+
+block variables
+    - let footerClass = 'footer footer--no-bgc'
+
+block content
+    include ../pug-includes/includes/header
+
+    main
+        section.banner.banner--manual
+            .banner__content
+                .container
+                    h1 user manual
+                    ul.breadcrumb
+                        li.breadcrumb__item #[a.breadcrumb__link(href="index.html") home]
+                        li.breadcrumb__item.breadcrumb__item--active user manual
+
+        div.top-banner
+            .container-fluid.top-banner__container
+                p.top-banner__text Follow the exact same steps that we put to create exactly what you needed.
+
+        .terms__container
+            .container
+                .grid
+                    .col-2-of-6.side-menu
+                        ul.side-menu__list
+                            li.side-menu__item #[a.side-menu__link(href="#start") Getting Started]
+                            li.side-menu__item #[a.side-menu__link(href="#first-bot") Building your first Bot]
+                            li.side-menu__item #[a.side-menu__link(href="#elements") Bot Building Elements]
+                            li.side-menu__item #[a.side-menu__link(href="#jump") conditional jumps]
+                            li.side-menu__item #[a.side-menu__link(href="#helper") helper elements]
+                            li.side-menu__item #[a.side-menu__link(href="#installation") installation guide]
+                            li.side-menu__item #[a.side-menu__link(href="#chat-transcript") chat transcript and integration]
+                            li.side-menu__item #[a.side-menu__link(href="#billing") billing]
+
+                    .col-4-of-6
+                        div
+                            div.terms__section
+                                p Ramabot is a simple to use, dynamic conversation Bot-Building-Platform which allows you create bots to turn your website more engaging. Building a bot with Ramabot interface is a matter of few minutes. Use Drag and Drop tool to build your script and replies. Deploy the JS code on your website to convert your visitors into subscribers.
+                                p Building Bots using Ramabot requires no technology understanding. We have designed the Interface to empower scores of small and medium-scale businesses with limited tech skills to harness the power of chatbots at a modest cost.
+
+                            div#start.terms__section
+                                h2.terms__title Getting Started
+                                .step__container
+                                    .step
+                                        h4.step__header 1. Sign-up with us
+                                        .step__body
+                                            p.step__text Click on the pricing menu in the header. Choose a package which suits your requirement. Sign-up by providing information such as your name, email ID, phone number and so on. Our executives will get in touch with you to get you started
+
+                                    .step
+                                        h4.step__header 2. Login
+                                        .step__body
+                                            p.step__text You can login by entering your registered email ID and password which you have set.
+
+                                    .step
+                                        h4.step__header 3. Trial Period
+                                        .step__body
+                                            p.step__text YTo give you a taste of our service and quality of the tool, we have allotted a trial period for every package. You can use this period to evaluate the bot and its utility for your business.
+
+                            div#first-bot.terms__section
+                                h2.terms__title Building your first Bot
+                                .step__container
+                                    .step
+                                        h4.step__header 1. Upon login, Click upon "Create new Script" option
+                                        .step__body
+                                            img.step__pic(src="./img/manual-images/ramabot-screen-1.jpg", alt="Create New Script Showcase Picture")
+
+                                    .step
+                                        h4.step__header 2. Enter Details of your bot!
+                                        .step__body
+                                            img.step__pic(src="./img/manual-images/ramabot-screen-2.jpg", alt="Create New Script Showcase Picture")
+
+                                    .step
+                                        h4.step__header 3. Build a bot by using our Bot-Builder!
+                                        .step__body
+                                            img.step__pic(src="./img/manual-images/ramabot-screen-3.jpg", alt="Create New Script Showcase Picture")
+
+                                    .step
+                                        h4.step__header 4. Here, you can find some of our ready-to-use templates to help you build !
+                                        .step__body
+                                            img.step__pic(src="./img/manual-images/ramabot-screen-4.jpg", alt="Create New Script Showcase Picture")
+
+                            div#elements.terms__section
+                                h2.terms__title Bot Building Elements
+                                p Ramabot has 18 in-built script building elements to facilitate Bot conversations. Number of these script building elements may vary for each package. This includes a Text message, Multi-choice, Multi-select, Date-Picker, Appointment Manager, Range Selector, Auto-Suggest Text box, Emoji-based Rating Collector, Scaled Opinion Collector, Link Builder, Card Block, Slider Card Block, A File-Uploader, Video Card, Audio Card, Google Powered Location Text Box, Email Collector and Phone Number Collector.  
+                                p Ramabot has a JSON API Card which allows you to create dynamic conversations involving data from your applications such as an ERP, CRM, CMS or other cloud-based tools. You can integrate the Bot with a REST API endpoint that supports GET, POST, PUT and DELETE methods. 
+                                p By nature, Bot building features are multi-lingual in nature. It supports Unicode texts of any language. 
+
+                            div#jump.terms__section
+                                h2.terms__title Conditional Jumps
+                                p Ramabot allows the conditional conversation through the use of ‘RQ Jump. The ‘RQ’ in the RQ Jump stands for ‘Rational Quotient’. RQ Jump allows you to create conditional jumps in the conversation based on a user input. For example, during a conversation, your bot may ask a user which one does she/he like more, Iron Man or Captain America? User X might say she likes Iron man while User Y might say he likes Captain America. RQ Jump allows the bot to have a different set of follow-up conversations upon such selection. For User X, Bot might continue conversation saying “Great Choice, Robert Downey Jr Rocks!” and for User Y, Bot might say “Hey! how good was Chris Evans as Captain America!”
+                                img(src="./img/manual-images/rq-jump.jpg", alt="RQ Conditional Jump Illustration Picture")
+                                p To access RQ Jump, open the script builder and add an element. You will find the RQ Jump icon right next to the ‘edit’ icon. 
+                                img(src="./img/manual-images/rq-jump-2.jpg", alt="Another RQ Conditional Jump Illustration Picture")
+                                p Along with options to jump a particular conversation point, RQ Jump has 2 default positions.
+                                    ul.list
+                                        li.list__item 1. #[strong No Jump:] This is the default state of all RQ jumps. It means that the bot will go to the conversation element present in the chronological order below.
+                                        li.list__item 2. #[strong End of Conversation:] When this option is selected, the Bot ends the conversation. 
+                                img(src="./img/manual-images/rq-jump-3.jpg", alt="No Jump and End of Conversation jump type Illustration Picture")
+
+                            div#helper.terms__section
+                                h2.terms__title Helper Elements
+                                p RamaBot has a set of helper elements to assist you in building conversations which create a human-like experience for the user.  
+                                .step__container
+                                    .step
+                                        h4.step__header 1. Custom Delay: 
+                                        .step__body
+                                            p.step__text Every bot element has a custom delay Helper element. This helps in creating a custom delay (defined in the number of seconds) to create humanized content delivery and also help in creating ample time for the user to read a text before the next text turns up. 
+                                            img.step__pic(src="./img/manual-images/helper-element-1.jpg", alt="Custom Delay in seconds Illustration Picture")
+
+                                    .step
+                                        h4.step__header 2. Halt Conversation: 
+                                        .step__body
+                                            p.step__text Every bot element has a ‘halt conversation’ Helper Element. This is a switch. If turned on, this holds the conversation at that very point, till user wishes to continue conversation!
+                                            img.step__pic(src="./img/manual-images/helper-element-2.jpg", alt="Halt conversation feature Illustration Picture")
+
+                                    .step
+                                        h4.step__header 3. End Conversation:
+                                        .step__body
+                                            p.step__text This too, is a switch. If turned on, this helper element shows a “End Conversation” button in the conversation interface and allows the user to end the conversation with the Bot from the front end.
+                                            img.step__pic(src="./img/manual-images/helper-element-3.jpg", alt="End conversation feature Illustration Picture")
+
+                                    .step
+                                        h4.step__header 4. Back:
+                                        .step__body
+                                            p.step__text This switch, when turned on, shows a “Back” button in the conversation interface and allows the user to go back to the previous conversation point.
+                                            img.step__pic(src="./img/manual-images/helper-element-4.jpg", alt="Show Back Button Illustration Picture")
+
+                                    .step
+                                        h4.step__header 5. Skip:
+                                        .step__body
+                                            p.step__text This switch, when turned on, shows a “skip” button in the conversation interface and allows the user to skip a conversation point.   
+                                            img.step__pic(src="./img/manual-images/helper-element-5.jpg", alt="Show Skip Button Illustration Picture")
+
+                                    .step
+                                        h4.step__header 6. Swear Jar:
+                                        .step__body
+                                            p.step__text To avoid abusive language and obscene conversations, We have created Swear Jar Helper Element. Swear Jar lets you create a library of abuses and allows you to let the set the bot reaction to it.  
+                                            img.step__pic(src="./img/manual-images/helper-element-6.jpg", alt="Show Skip Button Illustration Picture")
+                                            p.step__text This is a multi-select text box. Fill this up with abuses, swear words you can think of. This lets Bot build a library of abuses.
+                                            img.step__pic(src="./img/manual-images/helper-element-7.jpg", alt="Multi-Select text box Illustration Picture")
+                                            p.step__text You enter the response you want your bot to give when it encounters an abuse during conversation.
+                                            img.step__pic(src="./img/manual-images/helper-element-8.jpg", alt="Abuse response Illustration Picture")
+                                            p.step__text This lets you guide your Bot to either end the conversation after it gets abused or continue despite of it.
+                                            img.step__pic(src="./img/manual-images/helper-element-9.jpg", alt="Conversation after Abuse response Illustration Picture")
+
+                            div#installation.terms__section
+                                h2.terms__title installation guide
+                                p Ramabot can be installed on a website as a widget or can be embedded into the website pages. Once the bot is scripted, on the dashboard thumbnail.
+                                
+                                .step__container
+                                    .step
+                                        h4.step__header 1. Look for an option by name “Copy”
+                                        .step__body
+                                            img.step__pic(src="./img/manual-images/installation-guide-1.jpg", alt="To show where copy button lies Picture")
+                                    
+                                    .step
+                                        h4.step__header 2. Adding a widget
+                                        .step__body
+                                            p.step__text Upon clicking, a pop-up comes up. Please click on “Copy widget”. Now, the widget code snippet is copied to your clipboard. Paste this snippet in your website code.
+                                            img.step__pic(src="./img/manual-images/installation-guide-2.jpg", alt="How to add a widget illustration Picture")
+                                    
+                                    .step
+                                        h4.step__header 3. Embedding Bot into your webpage:
+                                        .step__body
+                                            p.step__text Click on “Copy Iframe” button in the pop-up. Now, the Iframe code snippet is copied to your clipboard. Paste this snippet into the webpage code where you want to run the bot.
+                                            img.step__pic(src="./img/manual-images/installation-guide-3.jpg", alt="How to copy IFrame illustration Picture")
+
+                            div#chat-transcript.terms__section
+                                h2.terms__title Accessing Chat Transcript
+                                p RamaBot not only allows you to download Bot chat transcript in CSV format, it also allows you to integrate bot transcript into google sheets. 
+
+                                .step__container
+                                    .step
+                                        h4.step__header 1. Downloading Transcript in CSV format
+                                        .step__body
+                                            p.step__text In the Dashboard, click on “Edit” option of the Bot under consideration. On the left-hand side, navigate to the option by name “Responses” and click on it.
+                                            img.step__pic(src="./img/manual-images/access-1.jpg", alt="First step to access chat transcript")
+                                            p.step__text Now, click on the “Export CSV” button found on the right-hand side of the page. This will automatically start downloading the bot transcript in CSV to your local machine.
+                                            img.step__pic(src="./img/manual-images/access-2.jpg", alt="How to copy CSV file")
+                                    
+                                    .step
+                                        h4.step__header 2. Integration
+                                        .step__body
+                                            p.step__text In the Dashboard, Click on “Edit” option of the Bot under consideration. On the left-hand side, navigate to the option by name “Integrations” and click on it.
+                                            img.step__pic(src="./img/manual-images/access-3.jpg", alt="How to get into integration page illustration Picture")
+                                            p.step__text You will now see a Google Sheets thumbnail. Upon clicking the thumbnail, it will interface will prompt you to connect with your google account. Connect with your preferred google account.
+                                            img.step__pic(src="./img/manual-images/access-4.jpg", alt="Google Sheet Export option illustration Picture")
+                                            p.step__text Google will verify your account, and upon verification prompts to grant permission to Ramabot to change and update your google spreadsheets. Please click 'allow’. This grants us permission to insert Bot transcript data into your google spreadsheets.
+                                            img.step__pic(src="./img/manual-images/access-5.jpg", alt="Google verification result for Sheet illustration Picture")
+                                            p.step__text Now, Enter a filename and click on create. This sheet will contain Bot chat transcript.
+                                            img.step__pic(src="./img/manual-images/access-6.jpg", alt="File name to download the sheet illustration Picture")
+                                    
+                            div#billing.terms__billing
+                                h2.terms__title Billing
+                                p We have created packages tailor-made for small and medium scale businesses. You can begin by selecting package appropriate for you. Every package has a trial period associated with it. During this time, you can test the Bot for its utility and experience the Bot engagement.
+                                p Once the trial period is over, you can to subscribe to the package you have selected by paying either a monthly fee or a yearly fee. This fee will be non-refundable. 
+
+    include ../pug-includes/includes/footer

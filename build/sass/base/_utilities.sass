@@ -1,0 +1,150 @@
+/*
+    Utility Classes Style Rules
+    ======================================================================*/
+
+.clearfix
+    &::after
+        content: ''
+        display: block
+        clear: both
+    
+.container
+    width: 116rem
+    margin: auto
+
+    &-fluid
+        margin: auto
+        width: calc( 100% - 10rem )
+
+.text-primary
+    color: $color-primary
+
+.cta
+    width: 28rem
+    height: 7rem
+    position: relative
+    color: $color-white
+    text-transform: capitalize
+    background-color: $color-primary
+
+    &__text
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        position: absolute
+        transition: all .3s
+
+    &__icon
+        position: absolute
+        top: 50%
+        right: 5.8rem
+        opacity: 0
+        transition: all .3s
+        transform: translateY(-50%)
+
+    &:hover
+        .cta__text
+            left: 42%
+        
+        .cta__icon
+            opacity: 1
+            right: 5rem
+            
+.title
+    width: 60%
+    color: $color-secondary
+
+    &#{&}--full
+        width: 100%
+
+    &#{&}--center
+        text-align: center
+        margin-left: auto
+        margin-right: auto
+
+    &__subtitle
+        text-transform: uppercase
+        font-size: 2.4rem
+        color: $color-text
+        display: block
+        font-family: $font-body
+        font-weight: 300
+
+    &--full#{&}__description
+        width: 100%
+
+    &__description
+        width: 60%
+        font-size: 2.4rem
+        color: $color-gray
+        font-weight: 300
+        margin-bottom: 1.5 * $gap-section
+
+        &.title--center
+            text-align: center
+            margin-left: auto
+            margin-right: auto
+
+.breadcrumb
+    display: inline-block
+    text-transform: capitalize
+    font-weight: 300
+    @extend .clearfix
+
+    &__item
+        float: left
+
+        &:not(:last-of-type)
+            &::after
+                content: '/'
+                margin: 0 1rem
+                display: inline-block
+        
+        &#{&}--active
+            color: $color-primary
+
+    &__link
+        color: currentColor
+        transition: all .3s
+
+        &:hover,
+        &:active
+            color: $color-primary
+
+.top-banner
+    margin-top: -1.5 * $gap-section
+    color: $color-gray
+    text-align: center
+
+    &__container
+        padding: $gap-section 2 * $gap-section
+        background-color: $color-light-gray
+
+    &#{&}--disclaimer
+        text-align: justify
+
+    &__title
+        font-size: 3.2rem
+        color: $color-secondary
+
+    &__text
+        font-size: 2.4rem
+        font-weight: 300
+
+        &:not(:last-of-type)
+            margin-bottom: $gap-title
+
+.block
+    display: block
+
+.separator
+    max-width: 116rem
+    border: none
+    margin: auto
+    border-top: 2px solid $color-border
+
+.text-center
+    text-align: center
+
+.mt
+    margin-top: $gap-section

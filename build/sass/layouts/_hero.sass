@@ -1,0 +1,46 @@
+/*
+    Hero Section Style Rules
+    ======================================================================*/
+.hero
+    color: $color-white
+    position: relative
+    min-height: 135rem
+    padding: 2 * $gap-section 0
+    background-image: url(../img/hero-back.svg)
+    background-repeat: no-repeat
+    background-size: cover
+
+    &__content
+        z-index: 4
+        width: 80rem
+        margin-top: 15rem
+        position: relative
+
+    &__text
+        font-size: 2.4rem
+        margin-bottom: $gap-title
+    
+    &__img
+        top: 30%
+        right: 0rem
+        width: 56%
+        z-index: 1
+        position: absolute
+
+    &__right-shape,
+    &__left-shape
+        position: absolute
+        fill: $color-primary
+        opacity: 0.4
+
+    &__right-shape
+        top: 0
+        right: 0
+        width: 60rem
+        height: 51rem
+
+    &__left-shape
+        top: 3rem
+        left: 0
+        width: 55rem
+        height: 49rem

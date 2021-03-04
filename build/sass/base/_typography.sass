@@ -1,0 +1,18 @@
+/*
+    Website Typography Style Rules
+    ======================================================================*/
+
+html
+    font-size: $font-size-default
+
+body
+    font: 1.8rem / 1.333 $font-body
+
+h1, h2, h3, h4
+    text-transform: capitalize
+    font-family: $font-heading
+    line-height: 1.1
+
+@each $key, $value in $font-heading-sizes
+    #{$key}
+        font-size: $value 

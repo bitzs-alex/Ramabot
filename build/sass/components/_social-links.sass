@@ -1,0 +1,42 @@
+/*
+    Socila Links Component Style Rules
+    ======================================================================*/
+.social-links
+    @extend .clearfix
+
+.social-link
+    $social-link: &
+
+    &__item
+        float: left
+        padding: 0rem 1rem
+
+    &__link
+        color: currentColor
+        transition: all .3s
+
+        &:hover,
+        &:active
+            &#{$social-link}__link--facebook
+                color: $color-facebook
+                
+            &#{$social-link}__link--instagram
+                color: $color-instagram
+
+            &#{$social-link}__link--twitter
+                color: $color-twitter 
+
+            &#{$social-link}__link--linkedin
+                color: $color-linkedin
+
+            &#{$social-link}__link--youtube
+                color: $color-youtube
+
+    &--lg
+        font-size: 4.3rem
+
+        #{$social-link}__item
+            padding: 0rem 3.5rem
+
+        #{$social-link}__link
+            vertical-align: middle

@@ -1,0 +1,96 @@
+extends ../pug-includes/layout
+
+block title
+    title Ramabot - Disclaimer Page
+    meta(name="description", content="Ramabot Disclaimer page content.")
+
+block variables
+    - let footerClass = 'footer footer--no-bgc'
+
+block content
+    include ../pug-includes/includes/header
+
+    main
+        section.banner.banner--about
+            .banner__content
+                .container
+                    h1 about
+                    ul.breadcrumb
+                        li.breadcrumb__item #[a.breadcrumb__link(href="index.html") home]
+                        li.breadcrumb__item.breadcrumb__item--active about
+
+        section.top-banner
+            .container-fluid.top-banner__container
+                h2.top-banner__title Who we are and what we do?
+                p.top-banner__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eum corporis provident magnam. Tempore, ea hic quasi accusamus ab accusantium cupiditate maiores a reprehenderit vitae aspernatur. Ab praesentium totam quos deserunt! Pariatur, nihil dolorum architecto corrupti alias doloribus quas! Minima ad nesciunt nulla illo neque voluptatum, quam tenetur. 
+                p.top-banner__text Esse saepe facilis inventore magnam. Dicta aliquid incidunt possimus nemo reiciendis saepe et, autem rem. Alias nostrum, modi dolor eius vel reiciendis. Quae quas quaerat, aliquid accusamus tenetur sit nihil!
+
+        section.about__group-pic
+            .container-fluid
+                figure.about__group-pic__container
+                    img.about__group-pic__img(src="./img/about-group.jpg", alt="Our Group Picture")
+
+        section.about__history
+            .container-fluid
+                .grid
+                    .col-1-of-2
+                        figure.about__leaders
+                            img.about__leaders__pic(src="./img/login-back.jpg", alt="Leaders Picture")
+
+                    .col-1-of-2
+                        .about__details.about__details--right
+                            h2.title.title--full #[span.title__subtitle our History] #[span.text-primary Our Journey] so far
+                            p.title__description.title--full Our story is as much about following a passion to find a better way of doing things as it is about the right people with a great idea meeting each other at the right time.
+
+                            .about__content
+                                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe autem, nostrum fuga corrupti quas debitis facere modi aperiam voluptas? Accusamus distinctio voluptas similique, qui ea ut quam quod inventore at? Culpa, ad dicta.
+                                p Eos magnam dolores beatae cupiditate sint perferendis repellat quis praesentium! Velit cumque adipisci exercitationem voluptates, quod ipsum quis omnis hic voluptate qui officia, iusto ducimus perspiciatis fuga voluptatum animi libero laboriosam quam natus sint facilis accusantium aspernatur doloremque! Harum possimus aut necessitatibus exercitationem velit recusandae quas facere similique, earum voluptatum illum nesciunt perspiciatis doloribus optio eveniet. Ipsum eligendi delectus deserunt ea provident?
+                                p Perferendis eaque sit id neque dolores cum officia ad debitis deserunt exercitationem architecto facere assumenda quas iste aliquid perspiciatis, corporis doloribus dolorum quos. Libero iste nam voluptatibus culpa, quod cupiditate tenetur ipsum ab, obcaecati ut expedita explicabo natus. Nostrum tempore nihil earum facere officiis ratione enim eos ipsa praesentium necessitatibus!
+
+                .grid.mt
+                    .col-1-of-2
+                        .about__details.about__details--mt
+                            h2.title.title--full The Spark
+
+                            .about__content
+                                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe autem, nostrum fuga corrupti quas debitis facere modi aperiam voluptas? Accusamus distinctio voluptas similique.
+                                p Eos magnam dolores beatae cupiditate sint perferendis repellat quis praesentium! Velit cumque adipisci exercitationem voluptates, quod ipsum quis omnis hic voluptate qui officia, accusantium aspernatur doloremque! Harum possimus aut necessitatibus exercitationem velit recusandae quas facere similique, earum voluptatum illum nesciunt perspiciatis doloribus optio eveniet. Ipsum eligendi delectus deserunt ea provident?
+                                p Perferendis eaque sit id neque dolores cum officia ad debitis deserunt exercitationem architecto facere assumenda quas iste aliquid perspiciatis, corporis doloribus. Libero iste nam voluptatibus culpa, quod cupiditate tenetur ipsum ab, obcaecati ut expedita explicabo natus. Nostrum tempore nihil earum facere officiis ratione enim eos ipsa praesentium necessitatibus!
+
+                    .col-1-of-2
+                        figure.about__leaders
+                            img.about__leaders__pic(src="./img/about-img-2.jpeg", alt="Leaders Picture")
+
+        hr.separator
+
+        section.testimonials.about__testimonials
+            .container
+                h2.title.title--center #[span.title__subtitle Words about us] #[span.text-primary Amazing] Clients’ Word
+                p.title--center.title__description What clients’ say about our services.
+
+                .testimony__list
+                    .testimony.testimony--left
+                        img.testimony__img(src="./img/avatar.jpg", alt="Testimony User Profile Picture")
+                        blockquote.testimony__content
+                            p.testimony__text Ramabot came to us at a point when we were investing heavily on digital marketing, yet our ROI was not peaking. Ever since we installed Ramabot our ROI has spiked 22%. Kudos!
+                            
+                            p.testimony__name Chirag Rai
+                            p.testimony__job CEO, Drektech
+
+                    .testimony.testimony--right
+                        blockquote.testimony__content
+                            p.testimony__text Ramabot generates as many leads as a sales executive for us every month. It is like having a full-time sales assistant available 24/7.
+                            
+                            p.testimony__name Vaibhav Shyam
+                            p.testimony__job Proprietor, Packstar India
+                        img.testimony__img(src="./img/avatar.jpg", alt="Testimony User Profile Picture")
+
+                    .testimony.testimony--left
+                        img.testimony__img(src="./img/avatar.jpg", alt="Testimony User Profile Picture")
+                        blockquote.testimony__content
+                            p.testimony__text Ramabot fixed a lot of customer-support-centric issues for us. Bot is flexible enough to accommodate last minute conversations.
+                            
+                            p.testimony__name Mahalakshmi
+                            p.testimony__job Head - Operations, Souhardha Group
+
+    include ../pug-includes/includes/footer

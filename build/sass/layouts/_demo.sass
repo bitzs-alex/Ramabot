@@ -1,0 +1,38 @@
+/*
+    Demo Layout Style Rules
+    ======================================================================*/
+.demo
+    background-color: $color-white
+    padding: $gap-section 0
+
+    &__form-container.form__container
+        margin-top: $gap-section
+        padding: $gap-horizontal
+        background: $color-light-gray
+        border: 2px solid $color-border
+
+    & &__field.form__field
+        margin-bottom: 0
+
+        .form__input
+            font-size: 2.4rem
+            padding: 2.05rem 2.8rem
+            font-weight: 300
+
+    &__btn
+        &.btn
+            width: 100%
+            text-align: center
+            color: $color-white
+            background-color: $color-secondary
+            font-size: 2.4rem
+            text-transform: uppercase
+            font-weight: 300
+            height: 14rem
+            transition: all .3s
+
+            &:hover
+                background-color: $color-primary
+
+        &-field
+            margin-left: -$gap-horizontal

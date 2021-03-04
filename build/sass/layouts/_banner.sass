@@ -1,0 +1,33 @@
+/*
+    Banner Style Rules
+    ======================================================================*/
+.banner
+    width: 100%
+    height: 68rem
+    color: $color-white
+    background-attachment: fixed
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+
+    &#{&}--pricing
+        background-image: linear-gradient(rgba($color-secondary, .8), rgba($color-secondary, .8)), url(../img/pricing-back.jpg)
+        
+    &#{&}--disclaimer
+        background-image: linear-gradient(rgba($color-secondary, .8), rgba($color-secondary, .8)), url(../img/disclaimer-back.jpg)
+
+    &#{&}--terms
+        background-image: linear-gradient(rgba($color-secondary, .8), rgba($color-secondary, .8)), url(../img/terms-back.jpg)
+
+    &#{&}--features
+        background-image: linear-gradient(rgba($color-secondary, .8), rgba($color-secondary, .8)), url(../img/feature-back.jpg)
+
+    &#{&}--manual
+        background-image: linear-gradient(rgba($color-secondary, .8), rgba($color-secondary, .8)), url(../img/manual-back.jpg)
+
+    &#{&}--about
+        background-image: linear-gradient(rgba($color-secondary, .8), rgba($color-secondary, .8)), url(../img/about-back.jpg)
+
+    &__content
+        position: relative
+        top: 50%

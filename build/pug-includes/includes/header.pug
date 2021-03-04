@@ -1,0 +1,57 @@
+header.header
+    .container-fluid
+        .grid.header__top
+            .col-1-of-2
+                .header__contact
+                    ul.contact.contact--inline
+                        li.contact__item
+                            i.contact__icon.ri-phone-line
+                            span.contact__detail +254-71489-5580
+                        li.contact__item
+                            i.contact__icon.ri-mail-send-line
+                            a.contact__detail(href="mailto:sales@ramabot.chat") sales@ramabot.chat
+
+            .col-1-of-2
+                .header__social
+                    ul.social-links.header__social-links
+                        li.social-link__item #[a.social-link__link.social-link__link--facebook(href="https://www.facebook.com/") #[i.ri-facebook-line]]
+                        li.social-link__item #[a.social-link__link.social-link__link--instagram(href="https://www.instagram.com/") #[i.ri-instagram-line]]
+                        li.social-link__item #[a.social-link__link.social-link__link--twitter(href="https://www.twitter.com/") #[i.ri-twitter-line]]
+                        li.social-link__item #[a.social-link__link.social-link__link--linkedin(href="https://www.linkedin.com/") #[i.ri-linkedin-line]]
+                        li.social-link__item #[a.social-link__link.social-link__link--youtube(href="https://www.youtube.com/") #[i.ri-youtube-line]]
+
+        //- nav.menu
+        //-     ul.menu__list
+        //-         li.menu__item #[a.menu__link(href="index.html") home]
+        //-         li.menu__item #[a.menu__link(href="#") about]
+        //-         li.menu__item #[a.menu__link(href="#") template]
+        //-         li.menu__item #[a.menu__link(href="pricing.html") pricing]
+        //-         li.menu__item #[a.menu__link(href="user-manual.html") user manual]
+
+        .grid.header__content
+            .col-1-of-6
+                .header__logo-container
+                    //- a.menu__toggler(href="#")
+                    //-     span.menu__hamburger
+                    //-     span.menu__hamburger
+                    //-     span.menu__hamburger
+                        
+                    .logo
+                        a.logo__link(href="index.html")
+                            img.logo__img(src="./img/logo.png", alt="Ramabot.chat Logo")
+                            span.logo__text ramabot
+
+            .col-3-of-6
+                nav.menu
+                    ul.menu__list
+                        li.menu__item #[a.menu__link(href="index.html") home]
+                        li.menu__item #[a.menu__link(href="about.html") about]
+                        li.menu__item #[a.menu__link(href="features.html") features]
+                        li.menu__item #[a.menu__link(href="pricing.html") pricing]
+                        li.menu__item #[a.menu__link(href="user-manual.html") user manual]
+
+            .col-2-of-6
+                .header__btn-container
+                    ul.header__btns
+                        li #[a.header__login-btn(href="login.html") #[i.ri-login-box-line] #[span login]]
+                        li #[a.header__cta-btn(href="demo.html") #[span get your demo]]

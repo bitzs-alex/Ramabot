@@ -1,0 +1,17 @@
+section.demo
+    .container
+        h2.title.title--center #[span.title__subtitle Transform your customer experience] Get Your #[span.text-primary Free Demo] Now!
+
+        form(action="demo.html", method="post")
+            .form__container.demo__form-container
+                .grid
+                    .col-4-of-6
+                        .form__field.demo__field
+                            input.form__input(type="text", name="full-name", placeholder="Enter Your Full Name")
+
+                        .form__field.demo__field
+                            input.form__input(type="email", name="email", placeholder="Enter Your Email Address")
+
+                    .col-2-of-6
+                        .demo__btn-field
+                            button.btn.demo__btn(type="submit") get your demo now

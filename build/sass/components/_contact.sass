@@ -1,0 +1,58 @@
+/*
+    Contact Component Style Rules
+    ======================================================================*/
+.contact
+    $contact: &
+    
+    &__title
+        line-height: 1
+        color: $color-secondary
+        margin-bottom: 1rem
+
+    &__item
+        margin-left: 9rem
+        position: relative
+        margin-bottom: $gap-vertical
+
+    &__detail
+        font-size: 2.4rem
+
+    &__icon
+        top: 50%
+        left: -9rem
+        display: inline-block
+        color: $color-primary
+        font-size: 6.5rem
+        position: absolute
+        transform: translateY(-50%)
+
+    &#{&}--inline
+        @extend .clearfix
+
+        #{$contact}__item
+            float: left
+            margin: 0
+            font-weight: 300
+            
+            &:not(:last-of-type)
+                margin-right: 2rem
+
+        #{$contact}__icon
+            font-size: 2rem
+            margin-right: 0.8rem
+            vertical-align: middle
+            top: 0
+            left: 0
+            position: relative
+            transform: translateY(0)
+
+        #{$contact}__detail
+            font-size: inherit
+            vertical-align: middle
+
+    a
+        color: currentColor
+
+        &:hover,
+        &:active
+            color: $color-primary

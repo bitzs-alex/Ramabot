@@ -1,0 +1,59 @@
+/*
+    Pane Layout Style Rules
+    ======================================================================*/
+.pane
+    &#{&}--login &__wrapper::before
+        background-image: linear-gradient(rgba($color-secondary, .9), rgba($color-secondary, .9)), url(../img/login-back.jpg)
+
+    &#{&}--demo &__wrapper::before
+        background-image: linear-gradient(rgba($color-secondary, .9), rgba($color-secondary, .9)), url(../img/demo-back.jpg)
+
+    &__wrapper
+        // box-shadow: .7rem .7rem .4rem rgba($color-black, .2)
+        background-image: linear-gradient(-86deg, $color-white 50%, transparent 50%)
+        position: relative
+
+        &::before
+            content: ''
+            z-index: -1
+            top: 0
+            left: 0
+            height: 100%
+            width: 60%
+            background-position: center
+            background-size: cover
+            background-repeat: no-repeat
+            position: absolute
+
+    &__showcase
+        text-align: center
+        color: $color-white
+        padding: $gap-vertical $gap-section
+    
+    &__text
+        margin-top: 1.5 * $gap-section
+
+    &__social
+        position: absolute
+        left: 25%
+        bottom: 4rem
+        font-size: 2.4rem
+        transform: translateX(-50%)
+
+    &__title
+        font-size: 5.7rem
+
+    &__description
+        font-size: 2.4rem
+        font-weight: 300
+
+    &__content
+        width: 100%
+        display: table
+        min-height: 100vh
+        padding: $gap-section
+        padding-left: 1.5 * $gap-section
+
+    &__middle
+        vertical-align: middle
+        display: table-cell

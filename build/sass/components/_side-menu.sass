@@ -1,0 +1,41 @@
+/*
+    Side-Menu Style Rules
+    ======================================================================*/
+.side-menu
+    top: 16.2rem
+    position: sticky
+
+    &__list
+        padding: $gap-title 0
+        text-transform: capitalize
+        background-color: $color-white
+        margin-right: $gap-vertical
+
+    &__link
+        height: 100%
+        padding: 1.6rem $gap-title
+        vertical-align: middle
+        color: $color-gray
+        display: block
+        position: relative
+
+        &::after
+            content: ''
+            left: 0
+            bottom: 0
+            width: 0.4rem
+            height: 0
+            background-color: $color-primary
+            display: inline-block
+            position: absolute
+            transition: height .3s
+
+        &#{&}--active
+            color: $color-primary
+
+            &::after
+                height: 100%
+
+        &:hover,
+        &:active
+            color: $color-primary

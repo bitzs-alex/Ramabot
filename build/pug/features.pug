@@ -1,0 +1,96 @@
+extends ../pug-includes/layout
+
+block title
+    title Ramabot - Home Page
+    meta(name="description", content="Best Ramabot Features")
+
+block content
+    include ../pug-includes/includes/header
+
+    main
+        section.banner.banner--features
+            .banner__content
+                .container
+                    h1 Features
+                    ul.breadcrumb
+                        li.breadcrumb__item #[a.breadcrumb__link(href="index.html") home]
+                        li.breadcrumb__item.breadcrumb__item--active features
+
+        section.top-banner
+            .container-fluid.top-banner__container
+                h2.top-banner__title Best features of a #[span.text-primary Modern Chatbot]
+                p.top-banner__text Ramabot allows you to display products through a well-stitched carousal interface.
+
+        section.features.features--page
+            .container
+                .grid
+                    .col-1-of-2
+                        .feature
+                            figure.feature__icon
+                                img.feature__img(src="./img/icons/drag-and-drop.png", alt="Drag Drop Illustration Picture")
+
+                            h3.feature__title Drag Drop Boat Builder
+                            p.feature__description You build your own ChatBot by drag and drop elements into your script building interface.
+                            
+                    .col-1-of-2
+                        .feature
+                            figure.feature__icon
+                                img.feature__img(src="./img/icons/OTP.png", alt="OTP Authentication Illustrator Picture")
+
+                            h3.feature__title Authentication Through OTP
+                            p.feature__description Ramabot has inbuilt OTP feature to confirm the contact data shared by the visitors, ensuring Data authentication.
+
+                .grid
+                    .col-1-of-2
+                        .feature
+                            figure.feature__icon
+                                img.feature__img(src="./img/icons/24X7.png", alt="24X7 Illustration Picture")
+
+                            h3.feature__title Get Lead Through SMS 24/7
+                            p.feature__description Ramabot sends you qualified and verified lead data on your phone numbers instantly 24/7, empowering your sales team.
+
+                    .col-1-of-2
+                        .feature
+                            figure.feature__icon
+                                img.feature__img(src="./img/icons/appointment.png", alt="Calendar with appointment Illustration Picture")
+
+                            h3.feature__title Appointment Management
+                            p.feature__description You can define your working days and time, decide the number of appointments you want to give out, and decide the length of the appointments.
+
+                .grid
+                    .col-1-of-2
+                        .feature
+                            figure.feature__icon
+                                img.feature__img(src="./img/icons/showcase.png", alt="Show Case Illustration Picture")
+
+                            h3.feature__title Showcase Your Products
+                            p.feature__description Ramabot allows you to display products through a well-stitched carousal interface.
+
+                    .col-1-of-2
+                        .feature
+                            figure.feature__icon
+                                img.feature__img(src="./img/icons/multilanguage.png", alt="Multi-language Illustration Picture")
+
+                            h3.feature__title Multi Language Compatibility
+                            p.feature__description You can train Ramabot in the language of your choice, allowing you to cater to the international audiences seamlessly.
+
+                .grid
+                    .col-1-of-2
+                        .feature
+                            figure.feature__icon
+                                img.feature__img(src="./img/icons/CSV.png", alt="Delivery to CRM Illustration Picture")
+
+                            h3.feature__title Data Delivery to Your CRM
+                            p.feature__description Ramabot has specific webhooks which allows you to get data collected and delivered directly to the CRM of your choice.
+
+                    .col-1-of-2
+                        .feature
+                            figure.feature__icon
+                                img.feature__img(src="./img/icons/branch.png", alt="Branching Illustration Picture")
+
+                            h3.feature__title Branch and Jump
+                            p.feature__description You can branch your bot elements with our “RQ” Jump feature and publish the bot on your website with just a small, tiny script!
+
+        include ../pug-includes/includes/demo
+
+    include ../pug-includes/includes/footer

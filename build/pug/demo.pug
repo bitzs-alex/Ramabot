@@ -1,0 +1,58 @@
+extends ../pug-includes/layout
+
+block title
+    title Ramabot - Ask Demo Page
+    meta(name="description", content="Ramabot Terms of Uses.")
+
+block content
+    main
+        .pane.pane--demo
+            .pane__wrapper
+                .grid
+                    .col-1-of-2
+                        .pane__showcase
+                            .logo
+                                a.logo__link(href="index.html")
+                                    img.logo__img(src="./img/logo.png", alt="Ramabot.chat Logo")
+                                    span.logo__text ramabot
+
+                            .pane__text
+                                h1.pane__title Ask Your Demo
+                                p.pane__description Increase your business sale with simple and easy to use chat bot.
+
+                            .pane__social
+                                ul.social-links
+                                    li.social-link__item #[a.social-link__link.social-link__link--facebook(href="https://www.facebook.com/") #[i.ri-facebook-line]]
+                                    li.social-link__item #[a.social-link__link.social-link__link--instagram(href="https://www.instagram.com/") #[i.ri-instagram-line]]
+                                    li.social-link__item #[a.social-link__link.social-link__link--twitter(href="https://www.twitter.com/") #[i.ri-twitter-line]]
+                                    li.social-link__item #[a.social-link__link.social-link__link--linkedin(href="https://www.linkedin.com/") #[i.ri-linkedin-line]]
+                                    li.social-link__item #[a.social-link__link.social-link__link--youtube(href="https://www.youtube.com/") #[i.ri-youtube-line]]
+
+                    .col-1-of-2
+                        .pane__content
+                            .pane__middle
+                                h2.text-center Get your demo
+
+                                form(action="login.html", method="post")
+                                    .form__container
+                                        .form__field
+                                            input.form__input(type="text", name="name", placeholder="Enter Your Full Name")
+
+                                        .form__field
+                                            input.form__input(type="text", name="phone", placeholder="Enter Your Phone Number")
+
+                                        .form__field
+                                            input.form__input(type="email", name="email", placeholder="Enter Email Address")
+
+                                        .form__field
+                                            button.btn.btn--primary.btn--block(type="submit") Get me my bot
+
+    footer
+        .footer__footer
+            ul.footer__link
+                li.footer__link-item #[a.footer__link-link(href='terms-of-use.html') terms of use]
+                li.footer__link-item #[a.footer__link-link(href='disclaimer.html') disclaimer]
+                li.footer__link-item #[a.footer__link-link(href='faq.html') FAQs]
+
+            .footer__copyright
+                p &copy; 2020 Copyrights Protected. All Rights Reserved.

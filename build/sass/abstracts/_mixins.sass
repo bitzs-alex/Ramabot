@@ -1,0 +1,6 @@
+// Column Mixins
+@mixin columnBuilder($span, $size)
+    .col-#{$span}-of-#{$size}
+        $subtract-size: ($size - 1) * $gap-horizontal
+        $added-size: ($span - 1) * $gap-horizontal
+        width: calc(((100% - #{$subtract-size}) / #{$size}) * #{$span} + #{$added-size})

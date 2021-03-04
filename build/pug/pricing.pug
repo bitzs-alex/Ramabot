@@ -1,0 +1,135 @@
+extends ../pug-includes/layout
+
+block title
+    title Ramabot - Pricing Page
+    meta(name="description", content="Ramabot prices for different business sizes.")
+
+block content
+    include ../pug-includes/includes/header
+
+    main
+        section.banner.banner--pricing
+            .banner__content
+                .container
+                    h1 pricing
+                    ul.breadcrumb
+                        li.breadcrumb__item #[a.breadcrumb__link(href="index.html") home]
+                        li.breadcrumb__item.breadcrumb__item--active pricing
+
+        section.top-banner
+            .container-fluid.top-banner__container
+                h2.top-banner__title Find a Package That Actually Fit to Your Business Size
+                p.top-banner__text But before you decide, ask a demo and enjoy your free 10 days
+
+        section.pricings
+            .container-fluid
+                .grid.pricings__list
+                    .col-1-of-3.pricings__table
+                        .pricing
+                            .pricing__header
+                                h2.pricing__title start up
+                                p.pricing__description For Professionals and Small Businesses
+                            .pricing__price
+                                ul.pricing__price-list
+                                    li.pricing__price-item #[span.pricing__price-amount $10] #[span.text-primary.pricing__price-time #[span.block per] month]
+                                    li.pricing__price-separator #[hr]
+                                    li.pricing__price-item #[span.pricing__price-amount $100] #[span.text-primary.pricing__price-time #[span.block per] year]
+                            .pricing__body
+                                ul.list.list--center
+                                    li.list__item 2 Bot License
+                                    li.list__item Single Control Panel
+                                    li.list__item 1000 Responses Per Month
+                                    li.list__item Bot Scripting Assistance
+                                    li.list__item Responses to Your Email
+                                    li.list__item 120 Days of Chat History
+                                    li.list__item Support Via Email
+                                    li.list__item One Time Setup Fees 
+                            .pricing__footer
+                                a.pricing__btn.btn(href="demo.html") get your demo now
+
+                    .col-1-of-3.pricings__table
+                        .pricing.pricing--choose
+                            .pricing__header
+                                h2.pricing__title Business plus
+                                p.pricing__description For Medium Business and E-commerce Sites
+                            .pricing__price
+                                ul.pricing__price-list
+                                    li.pricing__price-item #[span.pricing__price-amount $30] #[span.text-primary.pricing__price-time #[span.block per] month]
+                                    li.pricing__price-separator #[hr]
+                                    li.pricing__price-item #[span.pricing__price-amount $300] #[span.text-primary.pricing__price-time #[span.block per] year]
+                            .pricing__body
+                                ul.list.list--center
+                                    li.list__item 5 Bot License
+                                    li.list__item Multiple Control Panel
+                                    li.list__item 10000 Responses Per Month
+                                    li.list__item Bot Scripting Assistance
+                                    li.list__item Responces to Your Email
+                                    li.list__item 180 Days of Chat History
+                                    li.list__item Support Via Email and Phone
+                                    li.list__item Fre Setup
+                            .pricing__footer
+                                a.pricing__btn.btn(href="demo.html") get your demo now
+
+                    .col-1-of-3.pricings__table
+                        .pricing
+                            .pricing__header
+                                h2.pricing__title enterprize
+                                p.pricing__description For Large Enterprizes and Corporations
+                            .pricing__price
+                                img.pricing__price-img(src="./img/phone-ring.png", alt="Call Us for Price illustration Picture")
+                            .pricing__body
+                                ul.list.list--center
+                                    li.list__item Unlimited Bot License
+                                    li.list__item Multiple Control Panel
+                                    li.list__item 200000 Responses Per Month
+                                    li.list__item Bot Scripting Assistance
+                                    li.list__item Responces to Your Email
+                                    li.list__item 365 Days of Chat History
+                                    li.list__item Support Via Email and Phone
+                                    li.list__item Free Setup
+                            .pricing__footer
+                                a.pricing__btn.btn(href="demo.html") get your demo now
+
+        section.faqs
+            .container
+                h2.title.title--center pricing #[span.text-primary FAQs]
+                p.title__description.title--center Here are some of the FAQs we have been asked about our Pricings
+
+                .accordion__list
+                    .accordion
+                        .accordion__header
+                            h3.accordion__title Do I have to enter my Credit or Master Card to sign up?
+                            i.accordion__icon.ri-arrow-right-s-line
+                        .accordion__body
+                            .accordion__content
+                                p.accordion__text No. We only need you to fill out the form, then you will be able to start building your first chatbot for free. We will never ask an access to your either Credit or Master card.
+
+                    .accordion
+                        .accordion__header
+                            h3.accordion__title When is exactly my free trial period is over?
+                            i.accordion__icon.ri-arrow-right-s-line
+                        .accordion__body
+                            .accordion__content
+                                p.accordion__text We will give you full access for our chat builder regardless of your pricing choice for 10 days, after we revoke your privilege unless you subscribed for one of our pricing options.
+
+                    .accordion
+                        .accordion__header
+                            h3.accordion__title Can I cancel my subscription when ever I want?
+                            i.accordion__icon.ri-arrow-right-s-line
+                        .accordion__body
+                            .accordion__content
+                                p.accordion__text Yes, anytime. If you want to cancel your subscription just contact as and we will cancel your subscription instantly.
+
+                    .accordion
+                        .accordion__header
+                            h3.accordion__title What happens if I got questions to answer but I reached the maximum responses of my plan?
+                            i.accordion__icon.ri-arrow-right-s-line
+                        .accordion__body
+                            .accordion__content
+                                p.accordion__text We will not provide you an extra response privilege! Your Chatbots will continue to respond to users included in your plan but will no longer respond to users outside your plan. If such things keep happening monthly, we recommend you to upgrade to a higher plan.
+
+        hr.separator
+
+        include ../pug-includes/includes/demo
+
+    include ../pug-includes/includes/footer

@@ -1,0 +1,18 @@
+mixin social-links(state = '')
+    //- - const class = state.length ? 'social-links--' + state : ''
+    - const my-attributes = {class: 'social-links social-links--' + state}
+    //- ul.social-links(class = `${class}` )
+    ul
+        li.social-link__item #[a.social-link__link.social-link__link--facebook(href="https://www.facebook.com/") #[i.ri-facebook-line]]
+        li.social-link__item #[a.social-link__link.social-link__link--instagram(href="https://www.instagram.com/") #[i.ri-instagram-line]]
+        li.social-link__item #[a.social-link__link.social-link__link--twitter(href="https://www.twitter.com/") #[i.ri-twitter-line]]
+        li.social-link__item #[a.social-link__link.social-link__link--linkedin(href="https://www.linkedin.com/") #[i.ri-linkedin-line]]
+        li.social-link__item #[a.social-link__link.social-link__link--youtube(href="https://www.youtube.com/") #[i.ri-youtube-line]]
+
+mixin feature(obj)
+    .feature
+        figure.feature__icon
+            img.feature__img(src=obj.img.src, alt=obj.img.alt)
+
+        h3.feature__title obj.title
+        p.feature__description obj.description

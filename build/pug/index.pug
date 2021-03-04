@@ -1,0 +1,212 @@
+extends ../pug-includes/layout
+
+block title
+    title Ramabot - Home Page
+    meta(name="description", content="Ramabot is a simple to use, dynamic conversation bot which allows you to turn your website more engaging. Building a bot with Ramabot interface is a matter of few minutes. Use Drag and Drop tool to build your script and replies. Deploy the JS code on your website to convert your visitors into subscribers.")
+
+block content
+    include ../pug-includes/includes/header
+
+    main
+        section.hero
+            .container
+                .hero__content
+                    h1 Customizable Chatbot for #[span.text-primary Every Need!]
+                    p.hero__text Increase your customer satisfaction by shortening the waiting time or saving on personnel costs by having the Chatbot to answer incoming questions.
+                    //- p.hero__text Building a bot with Ramabot interface is a matter of few minutes. Use Drag and Drop tool to build your script and replies.
+                    a.cta(href="demo.html") #[span.cta__text get your demo] #[i.cta__icon &#8594;]
+
+            svg.hero__right-shape(version='1.0' xmlns='http://www.w3.org/2000/svg' width='611.000000pt' height='524.000000pt' viewbox='0 0 611.000000 524.000000' preserveaspectratio='xMidYMid meet')
+                g(transform='translate(0.000000,524.000000) scale(0.100000,-0.100000)')
+                    path(d='M716 5218 c-3 -13 -12 -61 -20 -108 -39 -207 -133 -691 -192 -988 -35 -178 -69 -356 -75 -395 -6 -40 -23 -137 -39 -217 -33 -164 -160 -818 -191 -985 -11 -60 -29 -155 -39 -210 -31 -163 -70 -438 -137 -955 -19 -146 -29 -723 -14 -755 5 -11 15 -51 22 -90 41 -240 140 -394 305 -472 l79 -38 153 -3 c116 -3 172 0 230 13 176 38 339 95 594 206 86 38 160 69 165 69 5 0 121 61 258 136 138 75 284 155 325 177 41 22 179 102 307 178 127 77 240 142 250 146 10 4 118 69 240 144 122 76 252 155 290 177 193 110 904 575 1217 794 104 73 231 162 282 198 554 387 1311 1037 1369 1177 13 30 15 161 15 929 l0 894 -2695 0 -2695 0 -4 -22z')
+
+            svg.hero__left-shape(version='1.0' xmlns='http://www.w3.org/2000/svg' width='611.000000pt' height='524.000000pt' viewbox='0 0 611.000000 524.000000' preserveaspectratio='xMidYMid meet')
+                g(transform='translate(0.000000,524.000000) scale(0.100000,-0.100000)')
+                    path(d='M0 1657 l0 -1362 103 -57 c178 -99 354 -165 558 -210 90 -19 133 -22 324 -22 191 0 234 3 325 22 650 141 1167 630 1296 1227 26 120 24 324 -4 438 -68 277 -254 497 -548 647 -118 60 -213 94 -457 161 -441 121 -913 272 -1381 443 -115 42 -210 76 -212 76 -2 0 -4 -613 -4 -1363z')
+            
+            img.hero__img(src="./img/hero-img.png", alt="Hero image which visualize people talking to a Chat Bot.")
+
+        section.features
+            .container
+                h2.title #[span.title__subtitle our bot] Best #[span.text-primary Features]
+                p.title__description We have designed Ramabot for businesses to create and manage conversation bots with no technical background.
+
+                .grid
+                    .col-1-of-2
+                        .feature
+                            figure.feature__icon
+                                img.feature__img(src="./img/icons/drag-and-drop.png", alt="Drag Drop Illustration Picture")
+
+                            h3.feature__title Drag Drop Boat Builder
+                            p.feature__description You build your own ChatBot by drag and drop elements into your script building interface.
+                            
+                    .col-1-of-2
+                        .feature
+                            figure.feature__icon
+                                img.feature__img(src="./img/icons/OTP.png", alt="OTP Authentication Illustrator Picture")
+
+                            h3.feature__title Authentication Through OTP
+                            p.feature__description Ramabot has inbuilt OTP feature to confirm the contact data shared by the visitors, ensuring Data authentication.
+
+                .grid
+                    .col-1-of-2
+                        .feature
+                            figure.feature__icon
+                                img.feature__img(src="./img/icons/24X7.png", alt="24X7 Illustration Picture")
+
+                            h3.feature__title Get Lead Through SMS 24/7
+                            p.feature__description Ramabot sends you qualified and verified lead data on your phone numbers instantly 24/7, empowering your sales team.
+
+                    .col-1-of-2
+                        .feature
+                            figure.feature__icon
+                                img.feature__img(src="./img/icons/appointment.png", alt="Calendar with appointment Illustration Picture")
+
+                            h3.feature__title Appointment Management
+                            p.feature__description You can define your working days and time, decide the number of appointments you want to give out, and decide the length of the appointments.
+
+                .features__more
+                    a.cta(href="features.html") #[span.cta__text show me more] #[i.cta__icon &#8594;]
+
+        hr.separator
+
+        section.business
+            .container-fluid
+                //- .grid
+                //-     .col-2-of-5
+                //-         img(src="./img/expand-business.png", alt="What Ramabot add to your business illustration Picture.")
+
+                //-     .col-3-of-5
+                h2.title.title--center #[span.title__subtitle Elevate your business with our chatbot] What our chatbot add to #[span.text-primary your business]
+
+                .business-add__container
+                    .grid
+                        .col-1-of-3
+                            .business-add
+                                figure.business-add__icon
+                                    img.business-add__img(src="./img/24-365-7.png", alt="24 365 7 illustration Picture")
+                                
+                                .business-add__body
+                                    h3.business-add__title 24/7/365 Customer Support
+                                    p.business-add__description Our Chatbot doesn't sleep. It automates conversations with your customers everyday, all day, and connects customers to your team with scheduling appointments when needed
+
+                        .col-1-of-3
+                            .business-add
+                                figure.business-add__icon
+                                    img.business-add__img(src="./img/load.png", alt="Workload illustration Picture")
+                                
+                                .business-add__body
+                                    h3.business-add__title manage load at ​peak times
+                                    p.business-add__description Our bot is like having an extra sales and customer service team ready to go whenever you need.
+
+                        .col-1-of-3
+                            .business-add
+                                figure.business-add__icon
+                                    img.business-add__img(src="./img/decision.png", alt="24 365 7 illustration Picture")
+                                
+                                .business-add__body
+                                    h3.business-add__title Advance decision making
+                                    p.business-add__description No more guesswork. Get the true voices of your customers. See the real questions your customers are asking and adapt your sales and service to match.
+
+        section.steps
+            .container
+                h2.title #[span.title__subtitle How Ramabot Works] Our Bot is Built For #[span.text-primary Programming Novice]
+                p.title__description We don’t expect you to know everything about programming to embed our bot into your system. Here are the simple steps to up and running our bot.
+
+                ul.step__list
+                    li.step__item.step--one
+                        p.step__number 01
+                        .step__content
+                            h3.step__title Register With us!
+                            p.step__description Once you register with us, an account gets created for you.
+                            img.step__img(src="./img/icons/Register.png", alt="Register Illustration Picture")
+
+                    li.step__item.step--two
+                        p.step__number 02
+                        .step__content
+                            h3.step__title Script Your Bot
+                            p.step__description You can build your script by using our drag and drop script builder. In case you don't know how to do this, our technical team would be glad to help you with it.
+                            img.step__img(src="./img/icons/script.png", alt="Script Illustration Picture")
+
+                    li.step__item.step--three
+                        p.step__number 03
+                        .step__content
+                            h3.step__title Inspect Your Bot
+                            p.step__description Once the script is ready, you can preview and confirm that the bot is functioning according to your command.
+                            img.step__img(src="./img/icons/inspect.png", alt="Inspect Illustration Picture")
+
+                    li.step__item.step--four
+                        p.step__number 04
+                        .step__content
+                            h3.step__title install
+                            p.step__description We will then hand over a script to you, an eight-liner, which you need to place within your website code and lo! your bot is deployed and ready to serve your visitors.
+                            img.step__img(src="./img/icons/Install.png", alt="Install Illustration Picture")
+
+                p.steps__description You can trust us for any kind of Business and some of the world class companies have also trusted us.
+
+        section.testimonials
+            .container
+                h2.title.title--center #[span.title__subtitle Words about us] #[span.text-primary Amazing] Clients’ Word
+                p.title--center.title__description What clients’ say about our services.
+
+                .testimony__list
+                    .testimony.testimony--left
+                        img.testimony__img(src="./img/avatar.jpg", alt="Testimony User Profile Picture")
+                        blockquote.testimony__content
+                            p.testimony__text Ramabot came to us at a point when we were investing heavily on digital marketing, yet our ROI was not peaking. Ever since we installed Ramabot our ROI has spiked 22%. Kudos!
+                            
+                            p.testimony__name Chirag Rai
+                            p.testimony__job CEO, Drektech
+
+                    .testimony.testimony--right
+                        blockquote.testimony__content
+                            p.testimony__text Ramabot generates as many leads as a sales executive for us every month. It is like having a full-time sales assistant available 24/7.
+                            
+                            p.testimony__name Vaibhav Shyam
+                            p.testimony__job Proprietor, Packstar India
+                        img.testimony__img(src="./img/avatar.jpg", alt="Testimony User Profile Picture")
+
+                    .testimony.testimony--left
+                        img.testimony__img(src="./img/avatar.jpg", alt="Testimony User Profile Picture")
+                        blockquote.testimony__content
+                            p.testimony__text Ramabot fixed a lot of customer-support-centric issues for us. Bot is flexible enough to accommodate last minute conversations.
+                            
+                            p.testimony__name Mahalakshmi
+                            p.testimony__job Head - Operations, Souhardha Group
+        
+        section.facts
+            .container
+                .grid
+                    .col-1-of-5
+                        .fact
+                            span.fact__icon #[i.ri-emotion-laugh-line]
+                            h3.fact__title 300+
+                            p.fact__subtitle happy clients
+
+                    .col-1-of-5
+                        .fact
+                            span.fact__icon #[i.ri-robot-line]
+                            h3.fact__title 341
+                            p.fact__subtitle Bots Rolled Out
+
+                    .col-1-of-5
+                        .fact
+                            span.fact__icon #[i.ri-line-chart-line]
+                            h3.fact__title 2300
+                            p.fact__subtitle Leads Generated
+
+                    .col-1-of-5
+                        .fact
+                            span.fact__icon #[i.ri-tools-line]
+                            h3.fact__title 90+
+                            p.fact__subtitle Ready Templates
+
+                    .col-1-of-5
+                        .fact
+                            span.fact__icon #[i.ri-cup-line]
+                            h3.fact__title 352
+                            p.fact__subtitle Cups of Coffee
+
+        include ../pug-includes/includes/demo
+
+    include ../pug-includes/includes/footer

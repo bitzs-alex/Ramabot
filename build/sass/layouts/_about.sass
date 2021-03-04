@@ -1,0 +1,38 @@
+/*
+    About Page Style Rules
+    ======================================================================*/
+.about
+    &__group-pic
+        padding-bottom: $gap-section
+
+        &__container
+            width: 100%
+            height: 50rem
+            border-radius: 3rem
+            overflow: hidden
+
+        &__img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            object-position: center
+
+    &__content p
+        &:not(:last-of-type)
+            margin-bottom: $gap-title
+
+    &__details
+        margin-right: 10rem
+
+        &#{&}--right
+            margin-right: 0
+            margin-left: 10rem
+
+    &__history
+        padding-bottom: $gap-section
+
+        & p.title__description
+            margin-bottom: $gap-title
+
+    &__testimonials
+        padding-top: $gap-section
